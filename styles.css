@@ -221,6 +221,24 @@ body {
   background: var(--accent);
 }
 
+.btn-outline {
+  background: transparent;
+  color: var(--black);
+  border: 1px solid var(--black);
+}
+
+.btn-outline:hover {
+  background: var(--black);
+  color: var(--white);
+}
+
+.review-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .btn-full {
   width: 100%;
   background: var(--black);
