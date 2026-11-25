@@ -3,35 +3,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Peña Insurance | Veteran-Owned Insurance Agency | Louisville & Denver Metro</title>
-  <meta name="description" content="Peña Insurance is a veteran-owned Farmers Insurance agency serving the Louisville and Denver metro area. Specializing in Home, Auto, Life, and Commercial insurance. Free quotes available.">
+  <title>Peña Insurance | Veteran-Owned Farmers Insurance Agent in Louisville, CO</title>
+  <meta name="description" content="Peña Insurance is a veteran-owned Farmers Insurance agency in Louisville, CO serving Boulder, Superior, Broomfield, Lafayette and the Denver metro. Home, auto, life, and commercial insurance. Free quotes.">
+  <link rel="canonical" href="https://penainsuranceagency.com/">
+  <meta name="robots" content="index, follow">
+
+  <!-- Social / link previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Peña Insurance">
+  <meta property="og:title" content="Peña Insurance | Veteran-Owned Insurance Agent in Louisville, CO">
+  <meta property="og:description" content="Home, auto, life, and commercial insurance from a U.S. Air Force veteran. Serving Louisville, Boulder County, and the Denver metro.">
+  <meta property="og:url" content="https://penainsuranceagency.com/">
+  <meta property="og:image" content="https://penainsuranceagency.com/headshot.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+
+  <!-- Structured data: helps Google and AI assistants understand the business -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "InsuranceAgency",
-    "name": "Peña Insurance",
-    "url": "https://pena-insurance.vercel.app",
-    "telephone": "+13039966509",
-    "email": "epena2@farmersagent.com",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "1021 E South Boulder Rd, Ste Q",
-      "addressLocality": "Louisville",
-      "addressRegion": "CO",
-      "postalCode": "80027",
-      "addressCountry": "US"
-    },
-    "founder": {
-      "@type": "Person",
-      "name": "Erick Peña",
-      "jobTitle": "Owner",
-      "description": "U.S. Air Force veteran with 11 years of service"
-    },
-    "areaServed": "Denver Metro Area",
-    "description": "Veteran-owned Farmers Insurance agency serving Louisville and the Denver metro area with home, auto, life, and commercial insurance. Focused on long-lasting relationships and personalized coverage."
+    "@graph": [
+      {
+        "@type": "InsuranceAgency",
+        "@id": "https://penainsuranceagency.com/#agency",
+        "name": "Peña Insurance",
+        "alternateName": "Pena Insurance",
+        "url": "https://penainsuranceagency.com/",
+        "logo": "https://penainsuranceagency.com/logo.png",
+        "image": "https://penainsuranceagency.com/headshot.jpg",
+        "telephone": "+1-303-996-6509",
+        "email": "epena2@farmersagent.com",
+        "priceRange": "Free quotes",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "1021 E South Boulder Rd, Ste Q",
+          "addressLocality": "Louisville",
+          "addressRegion": "CO",
+          "postalCode": "80027",
+          "addressCountry": "US"
+        },
+        "openingHoursSpecification": [{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "17:00"
+        }],
+        "areaServed": [
+          {"@type": "City", "name": "Louisville, CO"},
+          {"@type": "City", "name": "Superior, CO"},
+          {"@type": "City", "name": "Lafayette, CO"},
+          {"@type": "City", "name": "Boulder, CO"},
+          {"@type": "City", "name": "Broomfield, CO"},
+          {"@type": "City", "name": "Erie, CO"},
+          {"@type": "City", "name": "Westminster, CO"},
+          {"@type": "City", "name": "Denver, CO"}
+        ],
+        "knowsAbout": ["Home insurance", "Auto insurance", "Life insurance", "Commercial insurance", "Renters insurance", "Umbrella insurance", "Insurance for veterans"],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Insurance coverage",
+          "itemListElement": [
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Home Insurance"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Auto Insurance"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Life Insurance"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Commercial Insurance"}}
+          ]
+        },
+        "founder": {"@id": "https://penainsuranceagency.com/#erick"},
+        "description": "Veteran-owned Farmers Insurance agency in Louisville, Colorado serving Boulder County and the Denver metro area with home, auto, life, and commercial insurance. Focused on long-lasting relationships and personalized coverage."
+      },
+      {
+        "@type": "Person",
+        "@id": "https://penainsuranceagency.com/#erick",
+        "name": "Erick Peña",
+        "jobTitle": "Insurance Agent and Owner",
+        "worksFor": {"@id": "https://penainsuranceagency.com/#agency"},
+        "description": "Farmers Insurance agent and U.S. Air Force veteran with 11 years of service.",
+        "image": "https://penainsuranceagency.com/headshot.jpg"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type": "Question", "name": "Is Peña Insurance veteran-owned?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Erick Peña served 11 years in the U.S. Air Force before opening Peña Insurance. The agency is veteran-owned and serves Louisville and the Denver metro area."}},
+          {"@type": "Question", "name": "What types of insurance does Peña Insurance offer?", "acceptedAnswer": {"@type": "Answer", "text": "Home, auto, life, and commercial insurance, plus renters, condo, umbrella, and motorcycle/recreational coverage through Farmers Insurance."}},
+          {"@type": "Question", "name": "What areas does Peña Insurance serve?", "acceptedAnswer": {"@type": "Answer", "text": "Louisville, Superior, Lafayette, Boulder, Broomfield, Erie, Westminster, and the greater Denver metro area in Colorado."}},
+          {"@type": "Question", "name": "How do I get an insurance quote from Peña Insurance?", "acceptedAnswer": {"@type": "Answer", "text": "Fill out the quote form at penainsuranceagency.com, call (303) 996-6509, or email epena2@farmersagent.com. Erick will follow up by phone, text, or email, whichever you prefer."}},
+          {"@type": "Question", "name": "Is Peña Insurance a Farmers Insurance agent?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Peña Insurance offers Farmers Insurance products with personalized, local service from Louisville, Colorado."}}
+        ]
+      }
+    ]
   }
   </script>
 </head>
@@ -122,30 +187,15 @@
   <section id="reviews" class="reviews">
     <div class="container">
       <h2>What Clients Say</h2>
-      <p class="section-subtitle">Real feedback from people we’ve helped protect what matters most</p>
-      
+      <p class="section-subtitle">Reviews from clients on Google</p>
+
       <div class="reviews-grid">
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <p>“Erick took the time to explain everything clearly and found coverage that actually fit our needs. Highly recommend Peña Insurance.”</p>
-          <div class="reviewer">— Local Client</div>
-        </div>
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <p>“Great experience from start to finish. Responsive, knowledgeable, and truly cares about his clients.”</p>
-          <div class="reviewer">— Denver Metro Client</div>
-        </div>
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <p>“As a fellow veteran, I appreciated working with someone who understands service and follows through. Excellent agent.”</p>
-          <div class="reviewer">— Veteran Client</div>
-        </div>
+        <!-- REAL GOOGLE REVIEWS GO HERE (copied word-for-word, with reviewer's name as shown on Google) -->
       </div>
 
       <div class="review-cta">
         <p>Have you worked with Peña Insurance? Your feedback helps others find the right coverage.</p>
-        <a href="https://search.google.com/local/writereview?placeid=PLACE_ID_HERE" target="_blank" class="btn btn-primary">Leave a Google Review</a>
-        <p class="review-note">Once you have more reviews, we can replace these examples with your real Google reviews.</p>
+        <a href="https://search.google.com/local/writereview?placeid=PLACE_ID_HERE" target="_blank" rel="noopener" class="btn btn-dark">Leave a Google Review</a>
       </div>
     </div>
   </section>
@@ -165,7 +215,7 @@
         </div>
         <div class="faq-item">
           <h3>What areas do you serve?</h3>
-          <p>We primarily serve Louisville and the broader Denver metro area, including Superior, Broomfield, Boulder, and surrounding communities in Colorado.</p>
+          <p>Our office is in Louisville, and we serve Superior, Lafayette, Boulder, Broomfield, Erie, Westminster, and the greater Denver metro area in Colorado.</p>
         </div>
         <div class="faq-item">
           <h3>How do I get a quote?</h3>
@@ -208,6 +258,8 @@
         </div>
 
         <form class="quote-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <input type="hidden" name="_subject" value="New quote request from penainsuranceagency.com">
+          <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
           <div class="form-row">
             <div class="form-group">
               <label for="firstName">First Name *</label>
@@ -263,8 +315,14 @@
             <textarea id="note" name="note" rows="4" placeholder="Anything you’d like me to know..."></textarea>
           </div>
 
+          <label class="consent">
+            <input type="checkbox" name="consent" value="Yes" required>
+            <span>I agree to be contacted by Peña Insurance by phone, text, or email about my quote. Message and data rates may apply. Consent is not a condition of purchase.</span>
+          </label>
+
           <button type="submit" class="btn btn-primary btn-full">Request My Quote</button>
           <p class="form-note">Your information is kept private and will only be used to contact you about your insurance needs.</p>
+          <p class="form-status" role="status" aria-live="polite"></p>
         </form>
       </div>
     </div>
@@ -294,7 +352,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Peña Insurance. All rights reserved. | Agent License #895472</p>
+        <p>&copy; 2026 Peña Insurance. All rights reserved. | Agent License #895472 | <a href="privacy.html">Privacy Policy</a></p>
         <p class="disclaimer">Peña Insurance is an independent agency representing Farmers Insurance. Coverage availability and rates vary. Not all products are available in all states.</p>
       </div>
     </div>

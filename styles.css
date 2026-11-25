@@ -186,6 +186,15 @@ body {
   background: rgba(255,255,255,0.1);
 }
 
+.btn-dark {
+  background: var(--black);
+  color: var(--white);
+}
+
+.btn-dark:hover {
+  background: var(--accent);
+}
+
 .btn-full {
   width: 100%;
   background: var(--black);
@@ -318,6 +327,11 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
   margin-bottom: 48px;
+}
+
+/* Hidden until real reviews are added */
+.reviews-grid:empty {
+  display: none;
 }
 
 .review-card {
@@ -485,6 +499,40 @@ body {
   border-color: var(--accent);
 }
 
+.hp-field {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.consent {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 13px;
+  color: var(--gray);
+  margin: 4px 0 20px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.consent input {
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.form-status {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form-status.success { color: #1e7b34; }
+.form-status.error { color: #b42318; }
+
 .form-note {
   font-size: 13px;
   color: var(--gray);
@@ -549,6 +597,10 @@ body {
   opacity: 0.6;
 }
 
+.footer-bottom a {
+  color: var(--white);
+}
+
 .disclaimer {
   margin-top: 8px;
   font-size: 12px;
@@ -578,6 +630,19 @@ body {
   .nav-links,
   .nav-cta {
     display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    padding: 24px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   }
 
   .mobile-menu-btn {
