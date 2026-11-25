@@ -54,9 +54,35 @@ body {
   justify-content: space-between;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--black);
+}
+
 .logo img {
-  height: 48px;
+  height: 44px;
   width: auto;
+}
+
+.logo-text {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.logo-text small {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-top: 3px;
 }
 
 .nav-links {
@@ -555,9 +581,15 @@ body {
 }
 
 .footer-logo {
-  height: 50px;
+  height: 110px;
+  width: auto;
   margin-bottom: 16px;
   filter: invert(1);
+  mix-blend-mode: screen; /* drops the logo's background so only the white artwork shows */
+}
+
+.about-image img {
+  height: auto;
 }
 
 .footer-brand p {

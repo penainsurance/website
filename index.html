@@ -18,7 +18,8 @@
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="icon" type="image/png" href="logo-mark.png">
+  <link rel="apple-touch-icon" href="logo-mark.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
@@ -32,7 +33,9 @@
         "@type": "InsuranceAgency",
         "@id": "https://penainsuranceagency.com/#agency",
         "name": "Peña Insurance",
-        "alternateName": "Pena Insurance",
+        "alternateName": ["Pena Insurance", "Farmers Insurance - Erick Pena", "Erick Peña - Farmers Insurance Agent"],
+        "sameAs": ["https://www.google.com/search?kgmid=/g/11y0qslfwz"],
+        "hasMap": "https://share.google/ACSo7hLSmZDxjYnb5",
         "url": "https://penainsuranceagency.com/",
         "logo": "https://penainsuranceagency.com/logo.png",
         "image": "https://penainsuranceagency.com/headshot.jpg",
@@ -104,8 +107,9 @@
   <!-- Navigation -->
   <nav class="navbar">
     <div class="nav-container">
-      <a href="#home" class="logo">
-        <img src="logo.png" alt="Peña Insurance Logo">
+      <a href="#home" class="logo" aria-label="Peña Insurance home">
+        <img src="logo-mark.png" alt="" width="44" height="44">
+        <span class="logo-text">Peña <small>Insurance</small></span>
       </a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
@@ -135,7 +139,7 @@
     <div class="container">
       <div class="about-grid">
         <div class="about-image">
-          <img src="headshot.jpg" alt="Erick Peña, Owner of Peña Insurance">
+          <img src="headshot.jpg" alt="Erick Peña, Farmers Insurance agent and owner of Peña Insurance in Louisville, CO" width="800" height="1111" loading="lazy">
         </div>
         <div class="about-text">
           <h2>About Peña Insurance</h2>
@@ -195,7 +199,7 @@
 
       <div class="review-cta">
         <p>Have you worked with Peña Insurance? Your feedback helps others find the right coverage.</p>
-        <a href="https://search.google.com/local/writereview?placeid=PLACE_ID_HERE" target="_blank" rel="noopener" class="btn btn-dark">Leave a Google Review</a>
+        <a href="https://share.google/ACSo7hLSmZDxjYnb5" target="_blank" rel="noopener" class="btn btn-dark">See &amp; Leave Reviews on Google</a>
       </div>
     </div>
   </section>
@@ -223,7 +227,7 @@
         </div>
         <div class="faq-item">
           <h3>Are you a Farmers Insurance agent?</h3>
-          <p>Yes. Peña Insurance is an independent Farmers Insurance agency. We use Farmers products while providing personalized, local service.</p>
+          <p>Yes. Erick Peña is a Farmers Insurance agent, offering Farmers products with personalized, local service from our Louisville office.</p>
         </div>
       </div>
     </div>
@@ -257,7 +261,7 @@
           </div>
         </div>
 
-        <form class="quote-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <form class="quote-form" action="https://formspree.io/f/xnpdlyqe" method="POST">
           <input type="hidden" name="_subject" value="New quote request from penainsuranceagency.com">
           <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
           <div class="form-row">
@@ -333,7 +337,7 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-brand">
-          <img src="logo.png" alt="Peña Insurance" class="footer-logo">
+          <img src="logo.png" alt="Peña Insurance" class="footer-logo" loading="lazy">
           <p>Veteran-owned Farmers Insurance agency serving the Louisville and Denver metro area.</p>
         </div>
         <div class="footer-links">
@@ -353,7 +357,7 @@
       </div>
       <div class="footer-bottom">
         <p>&copy; 2026 Peña Insurance. All rights reserved. | Agent License #895472 | <a href="privacy.html">Privacy Policy</a></p>
-        <p class="disclaimer">Peña Insurance is an independent agency representing Farmers Insurance. Coverage availability and rates vary. Not all products are available in all states.</p>
+        <p class="disclaimer">Erick Peña is a Farmers Insurance agent. Coverage availability and rates vary. Not all products are available in all states.</p>
       </div>
     </div>
   </footer>
