@@ -594,6 +594,7 @@ body {
 
 .consent a {
   color: var(--accent);
+  overflow-wrap: anywhere;
 }
 
 .consent-hint {
