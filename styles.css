@@ -350,9 +350,15 @@ body {
 
 .reviews-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
   margin-bottom: 48px;
+}
+
+@media (max-width: 760px) {
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Hidden until real reviews are added */
@@ -374,17 +380,33 @@ body {
   letter-spacing: 2px;
 }
 
-.review-card p {
+.review-card {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 0;
+}
+
+.review-card blockquote {
   color: var(--gray);
   font-style: italic;
-  margin-bottom: 16px;
+  margin: 0 0 20px;
   line-height: 1.7;
+  flex: 1;
 }
 
 .reviewer {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 15px;
   color: var(--black);
+}
+
+.reviewer span {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--gray);
+  margin-top: 2px;
 }
 
 .review-cta {
