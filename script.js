@@ -23,6 +23,18 @@ if (form) {
   const status = form.querySelector('.form-status');
   const btnText = btn.textContent;
 
+  // Texting requires the separate (optional) SMS consent box
+  const method = form.querySelector('#contactMethod');
+  const sms = form.querySelector('#smsConsent');
+  const hint = form.querySelector('.consent-hint');
+  const syncSms = () => {
+    sms.required = method.value === 'Text';
+    if (!sms.required || sms.checked) hint.hidden = true;
+  };
+  method.addEventListener('change', syncSms);
+  sms.addEventListener('change', syncSms);
+  sms.addEventListener('invalid', () => { hint.hidden = false; });
+
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
     btn.textContent = 'Sending...';

@@ -592,6 +592,16 @@ body {
   cursor: pointer;
 }
 
+.consent a {
+  color: var(--accent);
+}
+
+.consent-hint {
+  font-size: 13px;
+  color: #b42318;
+  margin: -12px 0 16px;
+}
+
 .consent input {
   margin-top: 3px;
   flex-shrink: 0;

@@ -1,0 +1,9 @@
+.policy { max-width: 760px; margin: 0 auto; padding: 60px 24px 100px; }
+.policy h1 { font-family: 'Playfair Display', serif; font-size: 40px; line-height: 1.2; margin-bottom: 8px; }
+.policy h2 { font-size: 20px; margin: 32px 0 10px; }
+.policy p, .policy li { color: var(--gray); margin-bottom: 12px; }
+.policy ul { padding-left: 20px; }
+.policy a { color: var(--accent); }
+.policy .updated { font-size: 14px; }
+.back { display: inline-block; margin-bottom: 32px; color: var(--accent); text-decoration: none; font-weight: 500; }
+.legal-nav { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); font-size: 14px; }
