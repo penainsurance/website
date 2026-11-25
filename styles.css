@@ -266,24 +266,6 @@ body {
   color: var(--gray);
 }
 
-.about-details {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin-top: 32px;
-  padding-top: 24px;
-  border-top: 1px solid var(--border);
-}
-
-.about-details strong {
-  display: block;
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: var(--black);
-  margin-bottom: 4px;
-}
-
 /* Services */
 .services {
   padding: 100px 0;
@@ -741,10 +723,6 @@ body {
   }
 
   .form-row {
-    grid-template-columns: 1fr;
-  }
-
-  .about-details {
     grid-template-columns: 1fr;
   }
 }
